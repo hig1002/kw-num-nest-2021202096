@@ -2,6 +2,11 @@
 
 const lib = require("./lib");
 
+if (process.argv.length <= 3) {
+    console.log("Insufficient parameter!");
+    process.exit(1);
+}    
+
 let command = process.argv[2]; //명령어
 
 let numbers = process.argv
