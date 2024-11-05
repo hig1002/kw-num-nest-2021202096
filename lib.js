@@ -7,12 +7,24 @@ function avg(numbers){
 }
 
 function prime(num) {
-    // TODO
+    
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+
     return false;
 }
     
 function factorial(num) {
-    // TODO
+    
+    if (num < 0) return -1;
+    if (num === 0 || num === 1) return 1;
+    let result = 1;
+    for (let i = 2; i <= num; i++) {
+        result *= i;
+    }
+
     return -1;
 }
     
